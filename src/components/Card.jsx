@@ -28,7 +28,7 @@ function ProjectCard({name,stack, description}){
         <div>
             <img src={cyber} alt='IMAGE' className='w-full h-50 mx-auto'/>
         </div>
-        <div className='col-span-3 my-1'>
+        <div className='col-span-3 m-2'>
             <h3 className='text-2xl my-1'>{name}</h3>
             <h4 className='inline-flex'>Tech Stack</h4>
             {stack.map((tech)=>(

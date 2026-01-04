@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 .form-area{
-    @apply border-1 border-gray-400 rounded-lg focus:outline-none focus:border-green-600 p-3 w-150 h-50 resize-none m-2;
+    @apply border-1 border-gray-400 rounded-lg focus:outline-none focus:border-green-600 p-3 lg:w-150 h-50 resize-none m-2;
 }
 
 .sec-head{

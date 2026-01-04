@@ -12,11 +12,11 @@ function App() {
 
 
   return <>
-    <div className="grid grid-flow-col grid-cols-2 items-center">
-      <h1 className="m-10 text-5xl text-green-600 ">
+    <div className="flex flex-row justify-between lg:grid grid-flow-col grid-cols-2 items-center">
+      <h1 className="m-5 lg:m-10 text-xl lg:text-5xl text-green-600 ">
         SP
       </h1>
-      <nav className="inline-flex gap-10 justify-end items-center mx-20 text-lg">
+      <nav className="inline-flex gap-3 lg:gap-10 justify-end items-center lg:mx-20 text-sm lg:text-lg">
         <NavButton type="Projects" hyper="Projects"/>
         <NavButton type="Skills" hyper="Skill"/>
         <NavButton type="Contact" hyper="Contact"/>
@@ -24,11 +24,11 @@ function App() {
       </nav>
     </div>
 
-    <div className="grid grid-flow-col grid-cols-2 h-100 gap-10">
+    <div className="flex flex-col lg:grid lg:grid-flow-col lg:grid-cols-2  gap-10">
       <div className="h-100 flex flex-col justify-center">
         <h1 className="text-6xl m-3 text-center font-bold">Sanjay Patel</h1>
         <h3 className="italic m-2 text-center">Learner, ML developer, Tech Enthusiast, Full Stack Developer</h3>
-        <p className="text-lg text-center px-30">
+        <p className="lg:text-lg text-center lg:px-30">
           Bridging algorithmic precision with cloud-native scalability. I build intelligent, secure web systems using Python, React, and AWS.
         </p>
         <div className="gap-5 inline-flex justify-center w-full my-4">
@@ -37,12 +37,14 @@ function App() {
         </div>
       </div>
       <div className="flex justify-center">
-        <img src={dev} className="w-fit"/>
+        <img src={dev} className="w-fit h-fit"/>
       </div>
     </div>
-    <div className="py-10" id="Skill">
+
+    {/* Skill */}
+    <div className="py-10 " id="Skill">
       <SectionHead name="Skills"/>
-      <div className="inline-flex gap-6 w-full justify-evenly">
+      <div className="inline-flex gap-6 w-full flex-col items-center lg:justify-evenly  lg:flex-row">
         {Skills.map((skill) => (
           <SkillCard
             key={skill.id}
@@ -53,6 +55,8 @@ function App() {
         )}
       </div>
     </div>
+
+    {/* Project */}
     <div id="Projects">
       <SectionHead name="Projects"/>
       {Projects.map((Project)=>(
@@ -63,9 +67,12 @@ function App() {
         description={Project.description}/>
       ))}
     </div>
-    <div className="py-10 " id="Contact">
+
+
+    {/* Contact */}
+    <div className="py-10" id="Contact">
       <SectionHead name="Contact"/>
-      <div className="flex w-full justify-center gap-10">
+      <div className="flex flex-col items-center lg:flex-row lg:items-start w-full justify-center gap-10">
         <div className="flex flex-col items-start gap-4 px-3">
           <h4 className="text-2xl font-medium m-2">Socials</h4>
           <div className="flex flex-col gap-3" >
