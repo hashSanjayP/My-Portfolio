@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+.skillcard{
+    @apply border-2 border-transparent w-100 shadow-xl rounded-3xl h-100 mx-4 p-10 hover:transform hover:translate-y-2 hover:duration-100;
+}
+
+.skill-badge{
+    @apply text-green-700 bg-green-100 p-1 rounded-xl text-sm hover:bg-green-200 mx-2 ;
+}
+
+.project-card{
+    @apply grid grid-flow-col grid-cols-4 gap-4 border-transparent rounded-2xl shadow-xl m-5 hover:transform hover:translate-2 hover:duration-100;
+}

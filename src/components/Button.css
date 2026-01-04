@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+.nav-btn{
+    @apply hover:underline;
+}
+
+.primary-btn{
+    @apply text-white bg-green-600 p-2 m-1 rounded-3xl hover:bg-green-700;
+}
+
+.secondary-btn{
+    @apply border-2 p-2 m-1 rounded-3xl hover:bg-neutral-800 hover:text-white active:transition-all duration-200 active:scale-90 hover:shadow-2xl;
+}
+
