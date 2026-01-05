@@ -34,7 +34,7 @@ const Projects=[
         stack:["Python","React","APIs","Tensorflow"],
         description:"A comprehensive security platform that detects phishing and intrusion attempts using Machine Learning. \
         Built with React for a responsive UI and TensorFlow for real-time threat analysis.",
-        link:"https://github.com/Sanjaygenius777/MachineLearningWebsite"
+        link:"https://github.com/hashSanjayP/major_project_sans"
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ const Projects=[
         stack: ["Python", "React", "NLP", "TensorFlow", "OpenAI API"],
         description: "A multi-modal AI dashboard that features a text spam detector, flower image classifier, and an interactive LLM chatbot. \
         Demonstrates the seamless integration of Natural Language Processing and Computer Vision models into a unified web interface.",
-        link:"https://github.com/hashSanjayP/major_project_sans"
+        link:"https://github.com/Sanjaygenius777/MachineLearningWebsite"
     }
 ]
 
