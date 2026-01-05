@@ -41,9 +41,9 @@ function App() {
           <NavButton type="Contact" hyper="Contact" />
           <a
             className="text-sm secondary-btn"
-            href="https://drive.google.com/uc?export=download&id=1Paykz_lEBHGmBW1Dnab28W5wAFz9XEEf"
+            href="https://drive.google.com/file/d/1qWYoxm_U3jqZtS9THXSwWyvICAmrrwuT/view?usp=sharing"
           >
-            Download CV
+            Open resume
           </a>
         </nav>
       </div>
