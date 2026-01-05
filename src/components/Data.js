@@ -33,7 +33,8 @@ const Projects=[
         name:"CyberSecure Web APP",
         stack:["Python","React","APIs","Tensorflow"],
         description:"A comprehensive security platform that detects phishing and intrusion attempts using Machine Learning. \
-        Built with React for a responsive UI and TensorFlow for real-time threat analysis."
+        Built with React for a responsive UI and TensorFlow for real-time threat analysis.",
+        link:"https://github.com/Sanjaygenius777/MachineLearningWebsite"
     },
     {
         id: 2,
@@ -41,7 +42,8 @@ const Projects=[
         name: "ML Model Classifiers & LLM Chat",
         stack: ["Python", "React", "NLP", "TensorFlow", "OpenAI API"],
         description: "A multi-modal AI dashboard that features a text spam detector, flower image classifier, and an interactive LLM chatbot. \
-        Demonstrates the seamless integration of Natural Language Processing and Computer Vision models into a unified web interface."
+        Demonstrates the seamless integration of Natural Language Processing and Computer Vision models into a unified web interface.",
+        link:"https://github.com/hashSanjayP/major_project_sans"
     }
 ]
 

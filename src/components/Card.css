@@ -5,7 +5,7 @@
 }
 
 .skill-badge{
-    @apply text-green-700 bg-green-100 p-1 rounded-xl text-sm hover:bg-green-200 mx-2 ;
+    @apply text-green-700 bg-green-100 p-1 rounded-xl text-sm hover:bg-green-200 mx-2 gap-2;
 }
 
 .project-card{

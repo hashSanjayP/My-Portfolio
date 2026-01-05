@@ -21,21 +21,21 @@ function SkillCard({ category, technology, description }) {
 }
 
 
-function ProjectCard({name,image,stack, description}){
+function ProjectCard({name,image,stack, description, link}){
     return <>
     <div className='project-card'>
         <div>
             <img src={image} alt='IMAGE' className='w-full h-50 mx-auto'/>
         </div>
-        <div className='col-span-3 m-2'>
+        <div className='col-span-3 m-2 p-2'>
             <h3 className='text-2xl my-1'>{name}</h3>
             <h4 className='inline-flex'>Tech Stack</h4>
             {stack.map((tech)=>(
                 <SkillBadge key={tech} type={tech}/>
             ))}
-            <p className='my-1  leading-relaxed'>{description}</p>
+            <p className='my-1  leading-relaxed pb-2'>{description}</p>
             <PrimaryButton type="Watch Demo" isOn={false}/>
-            <SecondaryButton />
+            <SecondaryButton hyper={link}/>
         </div>
     </div>
     </>
