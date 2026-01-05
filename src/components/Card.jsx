@@ -1,5 +1,4 @@
 import './Card.css'
-import cyber from '../assets/cyber.png'
 import {PrimaryButton, SecondaryButton } from './Button'
 
 
@@ -22,11 +21,11 @@ function SkillCard({ category, technology, description }) {
 }
 
 
-function ProjectCard({name,stack, description}){
+function ProjectCard({name,image,stack, description}){
     return <>
     <div className='project-card'>
         <div>
-            <img src={cyber} alt='IMAGE' className='w-full h-50 mx-auto'/>
+            <img src={image} alt='IMAGE' className='w-full h-50 mx-auto'/>
         </div>
         <div className='col-span-3 m-2'>
             <h3 className='text-2xl my-1'>{name}</h3>
@@ -35,7 +34,7 @@ function ProjectCard({name,stack, description}){
                 <SkillBadge key={tech} type={tech}/>
             ))}
             <p className='my-1  leading-relaxed'>{description}</p>
-            <PrimaryButton type="Watch Demo"/>
+            <PrimaryButton type="Watch Demo" isOn={false}/>
             <SecondaryButton />
         </div>
     </div>

@@ -1,29 +1,55 @@
-import './Button.css' 
+import "./Button.css";
 
-function NavButton({type,hyper}){
-    return <>
-        <a className='nav-btn' href={`#${hyper}`}>{type}</a>
+function NavButton({ type, hyper }) {
+  return (
+    <>
+      <a className="nav-btn" href={`#${hyper}`}>
+        {type}
+      </a>
     </>
+  );
 }
 
-function ContactButton({via,children}){
-    return <>
-          <button className="border-transparent rounded-3xl w-40 p-3 flex items-center gap-4 r">
-            {children}
-            {via}</button>
+function ContactButton({ via,hyper, children }) {
+  return (
+    <>
+      <a className="border-transparent rounded-3xl w-40 p-3 flex items-center gap-4 underline mb-2 cursor-pointer "
+      href={hyper} target="blank">
+        {children}
+        {via}
+      </a>
     </>
+  );
 }
 
-function PrimaryButton({type}){
-    return <>
-          <button className="primary-btn">{type}</button>
+function PrimaryButton({ type, hyper, isOn }) {
+  return (
+    <>
+      <a
+        className="primary-btn"
+        href={hyper}
+        onClick={(e) => {
+          if (!isOn) {
+            e.preventDefault();
+            alert("Currently in Progress!");
+          }
+        }}
+        target="blank"
+      >
+        {type}
+      </a>
     </>
+  );
 }
 
-function SecondaryButton(){
-    return <>
-          <button className="secondary-btn">Github</button>
+function SecondaryButton({ hyper }) {
+  return (
+    <>
+      <a className="secondary-btn" href={hyper} target="blank">
+        Github
+      </a>
     </>
+  );
 }
 
-export {NavButton, ContactButton, PrimaryButton, SecondaryButton};
+export { NavButton, ContactButton, PrimaryButton, SecondaryButton };
